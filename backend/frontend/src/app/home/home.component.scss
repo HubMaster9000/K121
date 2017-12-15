@@ -1,0 +1,34 @@
+.container{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 50% auto;
+}
+
+.color-dark{
+  background: #008000;
+}
+.color-light{
+  background: #90EE90;
+}
+input.txt{
+  border: 0;
+  padding: 1em;
+  width: 80%;
+  margin-bottom: 2em;
+}
+input.btn{
+  border: 0;
+  display: block;
+  padding: 1em 3em;
+  background: #FF7F7F;
+  color: #003A61;
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+.player-container{
+  background: #008000;
+  padding:.5em;
+  color: #FFFFFF;
+  font-weight: bold;
+  cursor: pointer;
+}

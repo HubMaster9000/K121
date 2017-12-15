@@ -1,0 +1,29 @@
+
+<div class="container color-dark">
+  <div class="col">
+    <p>Add players</p>
+  </div>
+  <div class="col">
+    <p>Your Player List ({{ playerCount }})</p>
+  </div>
+</div>
+
+<div class="container color-light" [@players]="players.length">
+  <div class="col">
+    <p class="sm">Use this form below to add players to your secret santa game.</p>
+    <form>
+      <div id= ({{ playerCount }})>
+        <input type="text" class="txt" name="name" id="name" placeholder="Name" [(ngModel)]="playerName">
+        <input type="email" class="txt" name="email" id="email" placeholder="Email" [(ngModel)]="playerName">
+      </div>
+      <input type="submit" class="btn" [value]="btnText" (click)="addPlayer()">
+    </form>
+  </div>
+  <div class="col">
+    <p class="player-container" *ngFor="let player of players; let i = index" (click)="removePlayer(i)">
+      {{ player }}
+      {{ email }}
+    </p>
+    <input type="submit" class="btn" [vales]="btnTextTwo" (click)="sortPlayers()">
+  </div>
+</div>

@@ -1,0 +1,30 @@
+
+body {
+  background: #006400;
+  padding: 3em;
+  font-family: sans-serif;
+  color: #FF0000;
+}
+ul {
+  list-style-type: none;
+  margin: 0 0 2em 0;
+  padding: 0;
+}
+ul li{
+  display: inline;
+  margin-right: 30px;
+}
+ul li a{
+  font-size: 1.5em;
+}
+a{
+  color: #FF0000;
+  text-decoration: none;
+}
+.container{
+  display: grid;
+  grid-template-columns: 50% auto;
+}
+.col{
+  padding: .4em 1.3em;
+}
